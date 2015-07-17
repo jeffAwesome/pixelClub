@@ -1,16 +1,16 @@
 #{$all-button-inputs},
-button {
+button, .btn {
   @include appearance(none);
   -webkit-font-smoothing: antialiased;
-  background-color: $action-color;
+  background-color: transparent; 
   border-radius: $base-border-radius;
-  border: none;
-  color: #fff;
+  border: 2px solid $red;
+  color: $medium-gray;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1;
   padding: 0.75em 1em;
   text-decoration: none;
@@ -28,4 +28,10 @@ button {
     cursor: not-allowed;
     opacity: 0.5;
   }
+}
+
+
+.btn--fixed {
+  font-size: 24px;
+  text-transform: uppercase;
 }

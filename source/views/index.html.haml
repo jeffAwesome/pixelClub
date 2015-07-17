@@ -1,11 +1,41 @@
 ---
-title: Page Title
+title: Home
 ---
 
-.delete-me
-  .container
-    %h1 Proteus
-    %p
-      You're all set!
-      <a href="http://github.com/thoughtbot/proteus-middleman">Let's get started</a>
-      building your prototype.
+%section.hero
+  %header.header
+    .header__logo
+      %h1
+        = image_tag 'logo-pixelClub.png', :alt => 'Pixel Club'
+
+    %nav.nav
+      %Ul.main-nav
+        %li
+          = link_to 'Team', '#team'
+        %li
+          = link_to 'Clients', '#clients'
+        %li
+          = link_to 'Contact', '#contact'
+  
+  .hero__content
+    %h1.hero__main-heading 
+      %span.hero__main-heading--strong We handle the pixels 
+      you handle the business
+
+    %hr
+
+    %h2.hero__sub-heading Making the web a more beautiful place one pixel at a time.
+
+
+    = link_to 'Join The Club', '#contact', :class => 'btn btn--fixed'
+
+%section.team#team
+
+
+%section.clients#clients
+
+
+%section.contact#contact
+
+
+%footer.footer
