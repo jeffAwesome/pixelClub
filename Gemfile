@@ -5,5 +5,6 @@ source "http://rubygems.org"
 gem "middleman"
 gem "middleman-livereload"
 gem "middleman-deploy"
+gem 'middleman-gh-pages'
 gem "bourbon"
 gem "neat"
