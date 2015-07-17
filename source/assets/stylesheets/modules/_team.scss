@@ -1,0 +1,63 @@
+.team {
+  background: $red image_url('team-bg.png') no-repeat top right;
+  padding: 150px calc(50% - 940px/2);
+  text-align: center;
+}
+
+.team__main-heading {
+  color: $white;
+  font-size: 36px;
+  border-bottom: 2px solid $white;
+  width: 640px;
+  padding-bottom: 40px;
+  margin: 0 auto 1.3em;
+}
+
+
+.members {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.person {
+  padding-top: 65px;
+  display: inline-block;
+  color: $red;
+  background: #fff;
+  max-width: 245px;
+  height: 240px;
+  width: 245px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 45px;
+  margin-right: 45px;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+
+
+.person__title {
+  font-size: 23px;
+  font-weight: 100;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+
+.person__name {
+  font-size: 35px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+
+
