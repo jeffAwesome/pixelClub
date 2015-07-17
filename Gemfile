@@ -3,6 +3,7 @@
 source "http://rubygems.org"
 
 gem "rack-contrib"
+gem "puma"
 gem "middleman"
 gem "middleman-livereload"
 gem "middleman-deploy"
