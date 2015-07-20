@@ -1,5 +1,5 @@
 .contact {
-  background: $medium-purple;
+  background: $medium-purple image-url('contact-bg.png') no-repeat top left;
   padding: 140px 0 130px;
   text-align: center;
   box-sizing: border-box;
@@ -19,7 +19,7 @@
 .contact__form-container {
   background: $white;
   padding: 30px;
-  margin: 0 auto;
+  margin: 0 auto 45px;
   width: 80%;
   max-width: 780px;
   input {
@@ -31,4 +31,9 @@
       margin-right: 0;
     }
   }
+  textarea {
+    margin-bottom: 0;
+  }
 }
+
+
