@@ -17,7 +17,7 @@
 
 .header,
 .hero__content {
-    padding: 0 calc(50% - 940px/2);
+  @include outer-container;
 }
 
 .header {

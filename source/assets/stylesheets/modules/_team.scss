@@ -1,7 +1,11 @@
 .team {
   background: $red image_url('team-bg.png') no-repeat top right;
-  padding: 150px calc(50% - 940px/2);
+  padding: 150px 0;
   text-align: center;
+}
+
+.team__members {
+ @include outer-container;
 }
 
 .team__main-heading {
@@ -13,7 +17,6 @@
   padding-bottom: 40px;
   margin: 0 auto 1.3em;
 }
-
 
 .members {
   list-style: none;
