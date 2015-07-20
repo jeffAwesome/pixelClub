@@ -1,8 +1,13 @@
 @import "vendor/normalize";
 
+/* We depend on bourbon */
 @import "bourbon";
+
+/* Our base can overwrite neat */
 @import "base/base";
-@import "modules/main";
 @import "neat";
+
+/* We now depend on neat */
+@import "modules/main";
 
 @import "global";

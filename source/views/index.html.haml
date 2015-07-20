@@ -31,9 +31,9 @@ title: Pixel Club
     = link_to 'Join The Club', '#contact', :class => 'btn btn--fixed'
 
 %section.team#team
-  %h2.team__main-heading Meet The Team
 
   %section.team__members
+    %h2.team__main-heading Meet The Team
     %ul.members
       %li.person
         .person__name Jeff
@@ -50,6 +50,24 @@ title: Pixel Club
 
 
 %section.contact#contact
+  %section.l-wrapper
+    %h2.contact__main-heading Join The Club
 
+    %form.contact__form
+      .contact__form-container
+        %input{:type => 'text', :name => 'first_name', :placeholder => 'First Name' }
+        %input{:type => 'text', :name => 'last_name', :placeholder => 'Last Name' }
+        %input{:type => 'text', :name => 'phone', :placeholder => 'Phone Number' }
+        %input{:type => 'email', :name => 'email', :placeholder => 'Email' }
+        %input{:type => 'text', :name => 'company', :placeholder => 'Company' }
+        %select{:name => 'budget'}
+          %option{:value => '0'} Budget
+          %option{:value => '0 - $2500'} Up to $2500
+          %option{:value => '$2500 - $5000'} Up to $5000
+          %option{:value => '$5000 - $1000'} Up to $1000
+          %option{:value => '$1000+'} $10,000 and Up
+
+        %textarea{:name => 'message', :placeholder => 'Message'}
+    %button.btn.btn__contact Submit
 
 %footer.footer

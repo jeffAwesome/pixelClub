@@ -17,6 +17,7 @@ $base-z-index: 0;
 
 // Colors
 $blue: #477dca;
+$medium-purple: #656378;
 $dark-gray: #333;
 $medium-gray: #4c4a5a;
 $light-gray: #6d6e71;
@@ -29,9 +30,10 @@ $base-font-color: $dark-gray;
 $action-color: $medium-gray;
 
 // Border
-$base-border-color: $light-gray;
+$base-border-color: #C2C2C2;
 $base-border: 1px solid $base-border-color;
 
 // Forms
-$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+//$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow: none;
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
