@@ -30,6 +30,11 @@
     &:nth-child(2n) {
       margin-right: 0;
     }
+    @media (max-width: $small-screen) {
+      width: 100%;
+    }
+
+
   }
   textarea {
     margin-bottom: 0;

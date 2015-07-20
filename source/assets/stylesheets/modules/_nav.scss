@@ -4,6 +4,10 @@
 
 .nav {
   float: right;
+  @media (max-width: $small-screen) {
+    float: none;
+  }
+
 }
 
 
@@ -12,10 +16,20 @@
   margin: 0;
   padding: 0;
 
+  @media (max-width: $small-screen) {
+    text-align: center;
+  }
+
   > li {
     display: inline-block;
     padding: 0 14px 0 8px;
     position: relative;
+    a {
+ 
+      @media (max-width: $small-screen) {
+        font-size: 20px; 
+      }
+    }
     &:not(:last-child)::after {
       content: '\25CF';
       font-size: 8px;

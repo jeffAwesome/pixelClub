@@ -40,9 +40,24 @@
   margin-right: 45px;
   &:first-child {
     margin-left: 0;
+    @media (max-width: $small-screen) {
+      margin-left: 0;
+    }
   }
+
+  &:nth-child(2n) {
+    @media (max-width: $small-screen) {
+      margin-left: 0;
+    }
+  }
+
   &:last-child {
     margin-right: 0;
+
+    @media (max-width: $larger-screen) {
+      margin-left: 0;
+    }
+
   }
 }
 
