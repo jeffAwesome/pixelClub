@@ -4,7 +4,7 @@ $('form button').on 'click', (e) ->
   $(this).attr('disabled', 'disabled').text 'Submitting'
   d = thisform.serialize()
   $.ajax
-    url: 'http://now.eloqua.com/e/f2'
+    url: 'https://pixel-club-contact.herokuapp.com/'
     type: 'POST'
     data: d
     dataType: 'jsonp'
