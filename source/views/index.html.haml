@@ -53,7 +53,7 @@ title: Pixel Club
   %section.l-wrapper
     %h2.contact__main-heading Join The Club
 
-    %form.contact__form
+    %form.contact__form{:action => 'https://pixel-club-contact.herokuapp.com/', :method => 'post'}
       .contact__form-container
         %input{:type => 'text', :name => 'first_name', :placeholder => 'First Name' }
         %input{:type => 'text', :name => 'last_name', :placeholder => 'Last Name' }
