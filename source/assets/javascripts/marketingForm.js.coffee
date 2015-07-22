@@ -1,6 +1,11 @@
 $(document).ready ->
 
 
+  $('form button').on 'click', (e) ->
+    e.preventDefault()
+    $(this).attr('disabled', 'true').text('Submitting...')
+
+
   displayThankYou = ->
     buildThankYou()
 
