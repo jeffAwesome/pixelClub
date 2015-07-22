@@ -55,10 +55,10 @@ title: Pixel Club
 
     %form.contact__form{:action => 'https://pixel-club-contact.herokuapp.com/', :method => 'post'}
       .contact__form-container
-        %input{:type => 'text', :name => 'first_name', :placeholder => 'First Name' }
-        %input{:type => 'text', :name => 'last_name', :placeholder => 'Last Name' }
+        %input{:type => 'text', :name => 'first_name', :placeholder => 'First Name', :required => true }
+        %input{:type => 'text', :name => 'last_name', :placeholder => 'Last Name', :required => true }
         %input{:type => 'text', :name => 'phone', :placeholder => 'Phone Number' }
-        %input{:type => 'email', :name => 'email', :placeholder => 'Email' }
+        %input{:type => 'email', :name => 'email', :placeholder => 'Email', :required => true }
         %input{:type => 'text', :name => 'company', :placeholder => 'Company' }
         %select{:name => 'budget'}
           %option{:value => '0'} Budget
@@ -68,7 +68,7 @@ title: Pixel Club
           %option{:value => '$1000+'} $10,000 and Up
 
         %textarea{:name => 'message', :placeholder => 'Message'}
-    %button.btn.btn__contact Submit
+      %button.btn.btn__contact Submit
 
 %footer.footer
   %section.l-wrapper
